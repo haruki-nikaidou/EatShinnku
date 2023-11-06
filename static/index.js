@@ -317,11 +317,12 @@ function shareText(score) {
     if (deviation_time > 23000) {
         return '倒计时多了' + ((deviation_time / 1000) - 20).toFixed(2) + "s";
     }
-    if (score <= 30) return '你真的有在动吗？我一点感觉都没有？';
-    if (score <= 60) return '杂～鱼♥杂～鱼♥这么快就结束真是杂鱼呢～♥';
-    if (score <= 100) return '男生反应越快越早泄——真红';
+    if (score <= 30) return '1秒钟也很厉害了';
+    if (score <= 80) return '杂～鱼♥杂～鱼♥这么快就结束真是杂鱼呢～♥';
+    if (score <= 110) return '男生反应越快越早泄——真红';
     if (score <= 150) return '真红，你太棒了，你很美味，欲罢不能♥——奈子\nprpr';
-    return '呜诶～不是吧～太快了！';
+    if (score <= 195) return '呜诶～不是吧～太快了！';
+    return '卷这种奇怪的事情是不可以的！'
 }
 
 function toStr(obj) {
